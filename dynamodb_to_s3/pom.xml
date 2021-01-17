@@ -59,15 +59,17 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>software.amazon.awssdk</groupId>
-            <artifactId>url-connection-client</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.github.mpnsk.serverless_crud</groupId>
             <artifactId>model</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>url-connection-client</artifactId>
+        </dependency>
+
+
     </dependencies>
     <build>
         <plugins>
