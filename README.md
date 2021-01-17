@@ -1,4 +1,6 @@
-Aws Lambda function for putting data into DynamoDB. There is no 
+Aws Lambda function for putting data into DynamoDB. 
+
+There is no infrastructure-as-code yet. You have to setup the DynamoDB table, the SNS topic and all Roles and Permissions by yourself, sorry.
 ### Contents
 ```
 ├── create          (lambda for putting changes into ddb)
