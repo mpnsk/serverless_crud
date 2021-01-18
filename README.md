@@ -3,10 +3,10 @@ Aws Lambda function for putting data into DynamoDB.
 There is no infrastructure-as-code yet. You have to setup the DynamoDB table, the SNS topic and all Roles and Permissions by yourself, sorry.
 ### Contents
 ```
-├── create          (lambda for putting changes into ddb)
-├── dynamodb_to_s3  (lambda for taking a static snapshot from ddb) (INCOMPLETE! TBD!)
-├── dynamodb        (module with ddb helper functions)
-└── model           (module with datastructure that is used by create)
+├── create          // lambda for putting data into ddb
+├── dynamodb_to_s3  // lambda for taking a static snapshot of ddb
+├── dynamodb        // module for ddb base functions
+└── model           // module for ddb schema and interaction functions
 ```
 ### How to run
 ##### to create the Lambda
@@ -25,7 +25,7 @@ cd create
 target/manage.sh invoke
 ```
 
-###if you want to compile ahead-of-time with native-image the commands become
+### if you want to compile ahead-of-time with native-image the commands become
 ##### to create the Lambda
 ```shell
 ./mvnw clean package -pl create -am -P native
